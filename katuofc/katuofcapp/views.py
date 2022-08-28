@@ -14,3 +14,12 @@ def index(request):
 
 def facilitamei_index(request):
     return render(request, 'facilitamei_index.html')
+
+
+def facilitamei_dashboard(request):
+    teste = ""
+    return render(request, 'facilitamei_dashboard.html', {'teste': teste})
+
+
+def pp(request):
+    return render(request, 'pp.html')

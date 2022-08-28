@@ -1,4 +1,4 @@
-"""expertassist URL Configuration
+"""URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.1/topics/http/urls/
@@ -21,4 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name='index'),
     path('facilitamei', views.facilitamei_index, name='facilitamei_index'),
+    path('facilitamei/dashboard', views.facilitamei_dashboard, name='facilitamei_dashboard'),
+    path('pp', views.pp, name='pp'),
 ]
