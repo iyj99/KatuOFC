@@ -1,0 +1,302 @@
+/*===== GERAL =====*/
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #CED1E2;
+}
+
+/*===== BARRA DE NAVEGAÇÃO NO DESKTOP =====*/
+
+.barra_navegacao_desktop{
+    background-color: #083A88;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+}
+
+.barra_navegacao_desktop .barra_de_navegacao{
+    display: none;
+}
+
+.barra_navegacao_desktop .barra_de_pesquisa{
+    margin-right: 1.5rem;
+    margin-left: 1rem;
+    width: 70vw;
+}
+
+.barra_navegacao_desktop .barra_de_pesquisa input{
+    border: 0;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background-image: url(../images_page/search-icon.png);
+    background-repeat: no-repeat;
+    background-size: 5%;
+    background-position-x: 95%;
+    background-position-y: center;
+}
+
+/*===== BARRA DE NAVEGAÇÃO(BOTÕES, LOGO) =====*/
+
+.logo img{
+    width: 50px;
+    margin-left: 1.5rem;
+}
+
+.barra_de_navegacao ul{
+    display: flex;
+    gap: 30px;
+    height: 4rem;
+}
+
+.barra_de_navegacao ul li{
+    display: inline-block;
+    width: 60px;
+    height: 100%;
+}
+
+.barra_de_navegacao ul li:hover{
+    background-color: #0c45a1;
+}
+
+.barra_de_navegacao ul li:hover::after{
+    content: '';
+    display: block;
+    background-color: white;
+    width: 100%;
+    height: 6px;
+}
+
+.barra_de_navegacao li a{
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.barra_de_navegacao li a img{
+    width: 55%;
+}
+
+/*===== ÁREA DOS GRÁFICOS =====*/
+
+.area_dos_graficos{
+    width: 100vw;
+    height: auto;
+    padding: 6rem 2rem;
+    display: grid;
+    grid-template-areas: 
+    'g0'
+    'g1'
+    'g2'
+    'g3'
+    ;
+    gap: 20px;
+}
+
+.area_dos_graficos div{
+    background-color: white;
+    border-radius: 10px;
+}
+
+.area_dos_graficos .grafico_0{
+    grid-area: g0;
+    height: 35vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: unset;
+}
+
+.area_dos_graficos .grafico_1{
+    grid-area: g1;
+    height: 20rem;
+}
+
+.area_dos_graficos .grafico_2{
+    grid-area: g2;
+    height: 20rem;
+}
+
+.area_dos_graficos .grafico_3{
+    grid-area: g3;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: unset;
+}
+
+.area_dos_graficos .grafico_3-1, .area_dos_graficos .grafico_3-2{
+    width: 100%;
+    height: 20rem;
+}
+
+.grafico_0 div{
+    width: 30%;
+    height: 100%;
+}
+
+/*===== CALENDÁRIO =====*/
+
+.grafico_0 .calendario{
+    width: 6rem;
+    height: 6rem;
+    background-color: #083A88;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5vw;
+    gap: 15px;
+    cursor: pointer;
+
+    position: fixed;
+    z-index: 2;
+    bottom: 5rem;
+    right: 1rem;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.grafico_0 .calendario:hover{
+    background-color: #0c45a1;
+}
+
+.grafico_0 .calendario p{
+    display: none;
+}
+
+.grafico_0 .calendario img{
+    width: 40%;
+}
+
+.grafico_0 .calendario img:nth-child(3){
+    width: 9%;
+    display: none;
+}
+
+/*===== CAIXA DE OPÇÕES PARA O CALENDÁRIO =====*/
+
+.opcoes_calendario{
+    background-color: #083A88;
+    width: 90vw;
+    height: 80vh;
+    position: fixed;
+    left: 5vw;
+    top: 6rem;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+/*===== CAIXA PARA ENVIAR A TABELA DE DADOS =====*/
+
+.caixa_upload{
+    width: 50rem;
+    height: 10rem;
+    background-color: #083A88;
+    position: absolute;
+    z-index: 1;
+    top: 6rem;
+    left: auto;
+}
+
+/*===== BARRA DE NAVEGAÇÃO MOBILE ===== */
+
+.barra_navegacao_mobile{
+    background-color: #083A88;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: .1px;
+    position: fixed;
+}
+
+.barra_navegacao_mobile .barra_de_navegacao ul{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding: 0px 5px;
+}
+
+/*===== OUTROS =====*/
+
+.display_none{
+    display: none;
+}
+
+
+/*===== ADAPTAÇÃO DA TELA PARA VÁRIAS RESOLUÇÕES =====*/
+
+/*=== MOBILE (CELULAR E TABLET) ===*/
+@media screen and (min-width: 500px) {
+    .area_dos_graficos .grafico_0{
+        height: 20vw;
+    }
+}
+
+/*=== DESKTOP ===*/
+@media screen and (min-width: 850px) {
+    .barra_navegacao_desktop{
+        position: static;
+        justify-content: space-between;
+    }
+
+    .barra_navegacao_desktop .barra_de_navegacao{
+        display: flex;
+    }
+
+    .barra_navegacao_desktop .barra_de_pesquisa{
+        width: 25vw;
+    }
+
+    .area_dos_graficos{
+        grid-template-areas:
+        'g0 g0'
+        'g1 g2'
+        'g3 g3'
+        ;
+        padding: 2rem;
+    }
+
+    .area_dos_graficos .grafico_0{
+        height: 10vw;
+    }
+
+    .grafico_0 .calendario{
+        position: static;
+        border-radius: 10px;
+        height: 100%;
+        width: 10%;
+    }
+
+    .grafico_0 div{
+        width: 28%;
+    }
+
+    .area_dos_graficos .grafico_3{
+        flex-direction: row;
+    }
+
+    .opcoes_calendario{
+        width: 70vw;
+        left: 15vw;
+        position: absolute;
+    }
+
+    .barra_navegacao_mobile{
+        display: none;
+    }
+}
