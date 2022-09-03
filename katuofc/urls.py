@@ -14,7 +14,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 from katuofc.katuofcapp import views
 
 urlpatterns = [
@@ -23,4 +23,5 @@ urlpatterns = [
     path('facilitamei', views.facilitamei_index, name='facilitamei_index'),
     path('facilitamei/dashboard', views.facilitamei_dashboard, name='facilitamei_dashboard'),
     path('pp', views.pp, name='pp'),
+    path('', include('pwa.urls')),
 ]
