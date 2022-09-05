@@ -137,20 +137,20 @@ PWA_APP_NAME = 'FacilitaMEI'
 PWA_APP_DESCRIPTION = "My app description"
 PWA_APP_THEME_COLOR = '#0A0302'
 PWA_APP_BACKGROUND_COLOR = '#ffffff'
-PWA_APP_DISPLAY = 'standalone'
+PWA_APP_DISPLAY = 'fullscreen'
 PWA_APP_SCOPE = '/'
 PWA_APP_ORIENTATION = 'any'
-PWA_APP_START_URL = '/'
+PWA_APP_START_URL = '/facilitamei/dashboard'
 PWA_APP_STATUS_BAR_COLOR = 'default'
 PWA_APP_ICONS = [
     {
-            'src': '/static/assets/img/icon/3d.png',
+            'src': '/static/assets/img/logo/logo.png',
             'sizes': '160x160'
     }
 ]
 PWA_APP_ICONS_APPLE = [
     {
-            'src': '/static/assets/img/icon/3d.png',
+            'src': '/static/assets/img/logo/logo.png',
             'sizes': '160x160'
     }
 ]
