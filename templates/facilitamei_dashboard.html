@@ -25,7 +25,7 @@
                 <li>
                     <a href="#"><img src="../static/assets/src_page/images_page/settings-icon.png" alt="Botão de configurações"></a>
                 </li>
-                <li>
+                <li class="enviar_tabela" onclick="abrir_caixa_upload()">
                     <a href="#"><img src="../static/assets/src_page/images_page/upload-icon.png" alt="Botão de envio da tabela de dados"></a>
                 </li>
                 <li>
@@ -44,17 +44,18 @@
         <div class="grafico_0">
             <div class="calendario" onclick="abrir_calendario()">
                 <img src="../static/assets/src_page/images_page/planner-icon.png" alt="Botão de filtro ou calendário">
-                <p>Todo o período</p>
-                <img src="../static/asset../static/assets/src_page/images_page/seta_para_baixo.png" alt="Seta para abrir o calendário">
             </div>
             <div class="grafico_receita">
-
+                <span>Receita</span>
+                <span>R$ <span class="valor_receita">00.000</span></span>
             </div>
             <div class="grafico_despesa">
-
+                <span>Despesa</span>
+                <span>R$ <span class="valor_despesa">00.000</span></span>
             </div>
             <div class="grafico_saldo">
-
+                <span>Saldo</span>
+                <span>R$ <span class="valor_saldo">00.000</span></span>
             </div>
         </div>
         <div class="grafico_1">
@@ -73,10 +74,21 @@
         </div>
     </div>
     <div class="opcoes_calendario display_none">
+        <form method="post">
+            <label for="data_inicial">Data Inicial:</label>
+            <input type="date" name="data_inicial" id="data_inicial">
+            <label for="data_final">Data Final:</label>
+            <input type="date" name="data_final" id="data_final">
+            <button type="submit">Enviar</button>
+        </form>
 
     </div>
     <div class="caixa_upload display_none">
-
+        <form method="post">
+            <label for="arquivo_tabela">Envie sua tabela:</label>
+            <input type="file" name="arquivo_tabela" id="arquivo_tabela">
+            <button type="submit">Enviar Tabela</button>
+        </form>
     </div>
     <nav class="barra_navegacao_mobile">
         <div class="barra_de_navegacao">
@@ -87,7 +99,7 @@
                 <li>
                     <a href="#"><img src="../static/assets/src_page/images_page/settings-icon.png" alt="Botão de configurações"></a>
                 </li>
-                <li>
+                <li class="enviar_tabela" onclick="abrir_caixa_upload()">
                     <a href="#"><img src="../static/assets/src_page/images_page/upload-icon.png" alt="Botão de envio da tabela de dados"></a>
                 </li>
                 <li>
