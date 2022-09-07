@@ -1,6 +1,4 @@
-let calendario = document.getElementsByClassName('calendario');
 let opcoes_calendario = document.querySelector('.opcoes_calendario');
-let input_enviar_tabela = document.getElementsByClassName('enviar_tabela');
 let caixa_upload = document.querySelector('.caixa_upload');
 
 function abrir_calendario(){
@@ -10,5 +8,10 @@ function abrir_calendario(){
 
 function abrir_caixa_upload(){
     caixa_upload.classList.toggle('display_none');
+    opcoes_calendario.classList.add('display_none');
+};
+
+function voltar_para_inicio(){
+    caixa_upload.classList.add('display_none');
     opcoes_calendario.classList.add('display_none');
 };
