@@ -23,6 +23,7 @@ body{
     align-items: center;
     justify-content: center;
     position: fixed;
+    z-index: 4;
 }
 
 .barra_navegacao_desktop .barra_de_navegacao{
@@ -95,52 +96,21 @@ body{
     width: 100vw;
     height: auto;
     padding: 6rem 2rem;
-    display: grid;
-    grid-template-areas: 
-    'g0'
-    'g1'
-    'g2'
-    'g3'
-    ;
-    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .area_dos_graficos div{
-    background-color: white;
     border-radius: 10px;
 }
 
 .area_dos_graficos .grafico_0{
-    grid-area: g0;
     height: 35vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: unset;
-}
-
-.area_dos_graficos .grafico_1{
-    grid-area: g1;
-    height: 20rem;
-}
-
-.area_dos_graficos .grafico_2{
-    grid-area: g2;
-    height: 20rem;
-}
-
-.area_dos_graficos .grafico_3{
-    grid-area: g3;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    background-color: unset;
-}
-
-.area_dos_graficos .grafico_3-1, .area_dos_graficos .grafico_3-2{
-    width: 100%;
-    height: 20rem;
 }
 
 .grafico_0 div{
@@ -160,6 +130,23 @@ body{
     font-weight: bold;
     gap: .5rem;
 }
+
+.area_dos_graficos .graficos_principais{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap: 2rem;
+}
+
+.area_dos_graficos .grafico_1,
+.area_dos_graficos .grafico_2{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    background-color: white;
+}
+
 
 /*===== CALENDÁRIO =====*/
 
@@ -194,15 +181,13 @@ body{
 /*===== CAIXA DE OPÇÕES PARA O CALENDÁRIO =====*/
 
 .opcoes_calendario{
-    background-color: #083A88;
-    width: 90vw;
-    height: 35rem;
+    background-color: #054ec2;
+    width: 100vw;
+    height: 100%;
     position: fixed;
-    left: 5vw;
-    top: 25vh;
+    bottom: 1rem;
     z-index: 1;
     border-radius: 10px;
-    border: 3px solid black;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -234,15 +219,13 @@ body{
 /*===== CAIXA PARA ENVIAR A TABELA DE DADOS =====*/
 
 .caixa_upload{
-    width: 90vw;
-    height: 30rem;
-    background-color: #083A88;
+    width: 100vw;
+    height: 100vh;
+    background-color: #054ec2;
     position: fixed;
     z-index: 1;
-    top: 25vh;
-    left: 5vw;
+    bottom: 1rem;
     border-radius: 10px;
-    border: 3px solid black;
     display: flex;
 }
 
@@ -283,6 +266,7 @@ body{
     justify-content: center;
     bottom: .1px;
     position: fixed;
+    z-index: 4;
 }
 
 .barra_navegacao_mobile .barra_de_navegacao ul{
@@ -297,7 +281,6 @@ body{
 .display_none{
     display: none;
 }
-
 
 /*===== ADAPTAÇÃO DA TELA PARA VÁRIAS RESOLUÇÕES =====*/
 
@@ -324,11 +307,6 @@ body{
     }
 
     .area_dos_graficos{
-        grid-template-areas:
-        'g0 g0'
-        'g1 g2'
-        'g3 g3'
-        ;
         padding: 2rem;
     }
 
@@ -347,7 +325,7 @@ body{
         width: 28%;
     }
 
-    .area_dos_graficos .grafico_3{
+    .area_dos_graficos .graficos_principais{
         flex-direction: row;
     }
 
