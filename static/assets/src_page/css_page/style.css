@@ -140,13 +140,14 @@ body{
 }
 
 .area_dos_graficos .grafico_1,
-.area_dos_graficos .grafico_2{
+.area_dos_graficos .grafico_2,
+.area_dos_graficos .grafico_3,
+.area_dos_graficos .grafico_4{
     width: 100%;
     height: auto;
     padding: 20px;
     background-color: white;
 }
-
 
 /*===== CALENDÁRIO =====*/
 
