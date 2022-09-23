@@ -22,6 +22,7 @@ urlpatterns = [
     path('', views.index, name='index'),
     path('facilitamei', views.facilitamei_index, name='facilitamei_index'),
     path('facilitamei/dashboard', views.facilitamei_dashboard, name='facilitamei_dashboard'),
+    path('facilitamei/sobre', views.facilitamei_sobre, name='facilitamei_sobre'),
     path('pp', views.pp, name='pp'),
     path('', include('pwa.urls')),
 ]

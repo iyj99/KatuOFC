@@ -25,7 +25,7 @@ SECRET_KEY = 'oi4pu76***y&lp=o@!u@xae!ter3l)=uhhzx6s724ftz#^dk'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['katudv.com', 'www.katudv.com']
+ALLOWED_HOSTS = ['katudv.com', 'www.katudv.com', '152.67.42.101']
 
 
 # Application definition
