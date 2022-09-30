@@ -11,6 +11,7 @@
 
 body{
     background-color: #CED1E2;
+    overflow: auto;
 }
 
 /*===== BARRA DE NAVEGAÇÃO NO DESKTOP =====*/
@@ -221,7 +222,7 @@ body{
     height: 100%;
     position: fixed;
     bottom: 1rem;
-    z-index: 1;
+    z-index: 2;
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -251,6 +252,15 @@ body{
     cursor: pointer;
 }
 
+.opcoes_calendario .botao_fechar{
+    position: absolute;
+    top: 5rem;
+    right: 2rem;
+    cursor: pointer;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
 /*===== CAIXA PARA ENVIAR A TABELA DE DADOS =====*/
 
 .caixa_upload{
@@ -258,7 +268,7 @@ body{
     height: 100vh;
     background-color: #054ec2;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     bottom: 1rem;
     border-radius: 10px;
     display: flex;
@@ -290,6 +300,15 @@ body{
     background-color: lightgray;
 }
 
+.caixa_upload .botao_fechar{
+    position: absolute;
+    top: 5rem;
+    right: 2rem;
+    cursor: pointer;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
 /*===== BARRA DE NAVEGAÇÃO MOBILE ===== */
 
 .barra_navegacao_mobile{
@@ -311,12 +330,6 @@ body{
     padding: 0px 5px;
 }
 
-/*===== OUTROS =====*/
-
-.display_none{
-    display: none;
-}
-
 /*===== ADAPTAÇÃO DA TELA PARA VÁRIAS RESOLUÇÕES =====*/
 
 /*=== MOBILE (CELULAR E TABLET) ===*/
@@ -329,8 +342,9 @@ body{
 /*=== DESKTOP ===*/
 @media screen and (min-width: 850px) {
     .barra_navegacao_desktop{
-        position: static;
+        position: absolute;
         justify-content: space-between;
+        z-index: 5;
     }
 
     .barra_navegacao_desktop .barra_de_navegacao{
@@ -343,7 +357,6 @@ body{
 
     .area_dos_graficos{
         max-width: 100%;
-        padding: 2rem;
     }
 
     .area_dos_graficos .grafico_0{
@@ -387,23 +400,43 @@ body{
         flex-direction: row;
     }
 
+    .container_opcoes{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.7);
+        inset: 0; 
+        z-index: 2;
+    }
+
     .opcoes_calendario{
         width: 40vw;
         height: 25rem;
-        left: 15vw;
         position: absolute;
-        top: 6rem;
+        bottom: auto;
     }
 
     .caixa_upload{
-        top: 4rem;
-        left: 17vw;
+        top: auto;
+        bottom: auto;
         width: 45vw;
         height: 15rem;
-        border-radius: 0px 0px 10px 10px;
+    }
+
+    .opcoes_calendario .botao_fechar,
+    .caixa_upload .botao_fechar{
+        top: 1rem;
+        right: 1rem;
     }
 
     .barra_navegacao_mobile{
         display: none;
     }
+}
+
+/*===== OUTROS =====*/
+
+.display_none{
+    display: none;
 }
