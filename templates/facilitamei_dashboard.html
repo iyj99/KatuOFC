@@ -76,22 +76,29 @@
             </div>
         </div>
     </div>
-    <div class="opcoes_calendario display_none">
-        <form method="post">
-            <label for="data_inicial">Data Inicial:</label>
-            <input type="date" name="data_inicial" id="data_inicial">
-            <label for="data_final">Data Final:</label>
-            <input type="date" name="data_final" id="data_final">
-            <button type="submit">Enviar</button>
-        </form>
-
-    </div>
-    <div class="caixa_upload display_none">
-        <form method="post">
-            <label for="arquivo_tabela">Envie sua tabela:</label>
-            <input type="file" name="arquivo_tabela" id="arquivo_tabela">
-            <button type="submit">Enviar Tabela</button>
-        </form>
+    <div class="container_opcoes display_none">
+        <div class="opcoes_calendario display_none">
+            <form method="post">
+                <label for="data_inicial">Data Inicial:</label>
+                <input type="date" name="data_inicial" id="data_inicial">
+                <label for="data_final">Data Final:</label>
+                <input type="date" name="data_final" id="data_final">
+                <button type="submit">Enviar</button>
+            </form>
+            <div class="botao_fechar" onclick="voltar_para_inicio()">
+                <img src="../static/assets/src_page/images_page/close_icon.svg" alt="Botão de fechar janela de opções do calendário">
+            </div>
+        </div>
+        <div class="caixa_upload display_none">
+            <form method="post">
+                <label for="arquivo_tabela">Envie sua tabela:</label>
+                <input type="file" name="arquivo_tabela" id="arquivo_tabela">
+                <button type="submit">Enviar Tabela</button>
+            </form>
+            <div class="botao_fechar" onclick="voltar_para_inicio()">
+                <img src="../static/assets/src_page/images_page/close_icon.svg" alt="Botão de fechar janela de opções do calendário">
+            </div>
+        </div>
     </div>
     <nav class="barra_navegacao_mobile">
         <div class="barra_de_navegacao">
