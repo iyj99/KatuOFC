@@ -11,7 +11,6 @@
 
 body{
     background-color: #CED1E2;
-    overflow: auto;
 }
 
 /*===== BARRA DE NAVEGAÇÃO NO DESKTOP =====*/
@@ -269,9 +268,12 @@ body{
 
 .opcoes_calendario .botao_fechar{
     position: absolute;
-    top: 5rem;
+    top: 6rem;
     right: 2rem;
     cursor: pointer;
+}
+
+.opcoes_calendario .botao_fechar img{
     border: 2px solid white;
     border-radius: 50%;
 }
@@ -317,9 +319,12 @@ body{
 
 .caixa_upload .botao_fechar{
     position: absolute;
-    top: 5rem;
+    top: 6rem;
     right: 2rem;
     cursor: pointer;
+}
+
+.caixa_upload .botao_fechar img{
     border: 2px solid white;
     border-radius: 50%;
 }
@@ -456,6 +461,11 @@ body{
     .caixa_upload .botao_fechar{
         top: 1rem;
         right: 1rem;
+    }
+
+    .opcoes_calendario .botao_fechar img,
+    .caixa_upload .botao_fechar img{
+        width: 2rem;
     }
 
     .barra_navegacao_mobile{
