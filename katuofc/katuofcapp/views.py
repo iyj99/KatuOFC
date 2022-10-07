@@ -21,9 +21,7 @@ def facilitamei_dashboard(request):
 
 
 def facilitamei_sobre(request):
-    global variavel1
-    variavel1 = {'Janeiro': 30, 'Fevereiro': 20, 'Dezembro': 90}
-    return render(request, 'facilitamei_sobre.html', {'variavel1': variavel1})
+    return render(request, 'facilitamei_sobre.html', {'variavel1': {'Janeiro': 30, 'Fevereiro': 20, 'Dezembro': 90}})
 
 
 def pp(request):
