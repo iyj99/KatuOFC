@@ -22,7 +22,7 @@ def facilitamei_dashboard(request):
 
 def facilitamei_sobre(request):
     variavel1 = "testando 1 2 3"
-    return render(request, 'facilitamei_sobre.html', {'variavel1': variavel1})
+    return render(request, 'facilitamei_sobre.html')
 
 
 def pp(request):
