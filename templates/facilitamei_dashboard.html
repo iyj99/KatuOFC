@@ -49,16 +49,25 @@
                 <img src="../static/assets/src_page/images_page/planner-icon.png" alt="Botão de filtro ou calendário">
             </div>
             <div class="grafico_receita">
-                <span>Receita</span>
-                <span>R$ <span class="valor_receita">00.000</span></span>
+                <img src="../static/assets/src_page/images_page/monetization_icon_green.svg" alt="Ícone da Receita">
+                <div class="numeros_grafico_0">
+                    <span>Receita</span>
+                    <span>R$ <span class="valor_receita">00.000</span></span>                    
+                </div>
             </div>
             <div class="grafico_despesa">
-                <span>Despesa</span>
-                <span>R$ <span class="valor_despesa">00.000</span></span>
+                <img src="../static/assets/src_page/images_page/monetization_icon_red.svg" alt="Ícone da Despesa">
+                <div class="numeros_grafico_0">
+                    <span>Despesa</span>
+                    <span>R$ <span class="valor_despesa">00.000</span></span>                    
+                </div>
             </div>
             <div class="grafico_saldo">
-                <span>Saldo</span>
-                <span>R$ <span class="valor_saldo">00.000</span></span>
+                <img src="../static/assets/src_page/images_page/monetization_icon_green.svg" alt="Ícone do Saldo">
+                <div class="numeros_grafico_0">
+                    <span>Saldo</span>
+                    <span>R$ <span class="valor_saldo">00.000</span></span>   
+                </div>
             </div>
         </div>
         <div class="graficos_principais">
@@ -78,22 +87,29 @@
             </div>
         </div>
     </div>
-    <div class="opcoes_calendario display_none">
-        <form method="post">
-            <label for="data_inicial">Data Inicial:</label>
-            <input type="date" name="data_inicial" id="data_inicial">
-            <label for="data_final">Data Final:</label>
-            <input type="date" name="data_final" id="data_final">
-            <button type="submit">Enviar</button>
-        </form>
-
-    </div>
-    <div class="caixa_upload display_none">
-        <form method="post">
-            <label for="arquivo_tabela">Envie sua tabela:</label>
-            <input type="file" name="arquivo_tabela" id="arquivo_tabela">
-            <button type="submit">Enviar Tabela</button>
-        </form>
+    <div class="container_opcoes display_none">
+        <div class="opcoes_calendario display_none">
+            <form method="post">
+                <label for="data_inicial">Data Inicial:</label>
+                <input type="date" name="data_inicial" id="data_inicial">
+                <label for="data_final">Data Final:</label>
+                <input type="date" name="data_final" id="data_final">
+                <button type="submit">Enviar</button>
+            </form>
+            <div class="botao_fechar" onclick="voltar_para_inicio()">
+                <img src="../static/assets/src_page/images_page/close_icon.svg" alt="Botão de fechar janela de opções do calendário">
+            </div>
+        </div>
+        <div class="caixa_upload display_none">
+            <form method="post">
+                <label for="arquivo_tabela">Envie sua tabela:</label>
+                <input type="file" name="arquivo_tabela" id="arquivo_tabela">
+                <button type="submit">Enviar Tabela</button>
+            </form>
+            <div class="botao_fechar" onclick="voltar_para_inicio()">
+                <img src="../static/assets/src_page/images_page/close_icon.svg" alt="Botão de fechar janela de opções do calendário">
+            </div>
+        </div>
     </div>
     <nav class="barra_navegacao_mobile">
         <div class="barra_de_navegacao">
