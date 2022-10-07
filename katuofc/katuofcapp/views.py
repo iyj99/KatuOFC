@@ -21,8 +21,8 @@ def facilitamei_dashboard(request):
 
 
 def facilitamei_sobre(request):
+    global variavel1
     variavel1 = {'Janeiro': 30, 'Fevereiro': 20, 'Dezembro': 90}
-    variavel1 = json.dumps(variavel1, indent=4, default=str, ensure_ascii=False)
     return render(request, 'facilitamei_sobre.html', {'variavel1': variavel1})
 
 
