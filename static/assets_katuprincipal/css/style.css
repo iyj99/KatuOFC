@@ -310,12 +310,12 @@ figure figcaption {
   left: 0;
   right: 0;
   content: '';
-  background: rgba(0, 0, 0, 0.3);
+  background: rgb(0 15 94 / 58%);
 }
 #fh5co-hero .flexslider .slides li {
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom center;
+  background-size: auto;
+  background-position: center;
   min-height: 500px;
   position: relative;
 }
