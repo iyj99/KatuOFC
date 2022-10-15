@@ -1,21 +1,33 @@
+function valor_meses(arquivo){
+  var labels_meses = Object.keys(arquivo)
+  return labels_meses
+}
+
+function valor(arquivo){
+  var dados_valores = Object.values(arquivo)
+  return dados_valores
+}
+
+let meses = valor_meses(variavel1)
+
+let valores = valor(variavel1)
+
+console.log(meses)
+
+console.log(valores)
+
+
+// Código do Gráfico
 const ctx = document.getElementById("myChart")
 
-const labels = [
-    'Janeiro',
-    'Fevereiro',
-    'Março',
-    'Abril',
-    'Maio',
-    'Junho',
-    'Julho',
-]
+const labels = meses
 
 const data = {
     labels,
     datasets:[{
         backgroundColor: 'rgb(103, 169, 243)',
         borderColor: 'rgb(21, 60, 234)',
-        data: [2102, 2299, 4199, 3170, 4201, 5277, 5302],
+        data: valores,
         label: "Projeção de lucro"
     }]
 }
