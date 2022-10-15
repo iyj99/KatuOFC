@@ -28,7 +28,7 @@ const data = {
         backgroundColor: 'rgb(2, 46, 156)',
         borderColor: 'rgb(21, 60, 234)',
         data: valores,
-        label: "Despesas por Mensais"
+        label: "Despesas Mensais"
     }]
     
 }
