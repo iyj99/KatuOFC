@@ -18,7 +18,7 @@ console.log(valores)
 
 
 // Código do Gráfico
-const ctx = document.getElementById("myChart")
+const ctx = document.getElementById("myChart1")
 
 const labels = meses
 
