@@ -10,11 +10,11 @@ function valor(arquivo){
 
 let categoria = valor_meses(variavel1)
 
-let valores = valor(variavel1)
+let valoresCategorias = valor(variavel1)
 
 console.log(categoria)
 
-console.log(valores)
+console.log(valoresCategorias)
 
 
 //Código do Gráfico
@@ -28,7 +28,7 @@ const data = {
     datasets:[{
         backgroundColor: 'rgb(103, 169, 243)',
         borderColor: 'rgb(21, 60, 234)',
-        data: valores,
+        data: valoresCategorias,
         label: "Despesas por Categoria"
     }]
     
