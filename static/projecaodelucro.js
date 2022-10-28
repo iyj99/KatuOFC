@@ -8,27 +8,27 @@ function valor(arquivo){
   return dados_valores
 }
 
-let meses = valor_meses(variavel1)
+let mesesProjecaodelucro = valor_meses(variavel1)
 
-let valores = valor(variavel1)
+let valoresProjecaodelucro = valor(variavel1)
 
-console.log(meses)
+console.log(mesesProjecaodelucro)
 
-console.log(valores)
+console.log(valoresProjecaodelucro)
 
 
 // Código do Gráfico
 
 const ctx = document.getElementById("myChart")
 
-const labels = meses
+const labels = mesesProjecaodelucro
 
 const data = {
     labels,
     datasets:[{
         backgroundColor: 'rgb(103, 169, 243)',
         borderColor: 'rgb(21, 60, 234)',
-        data: valores,
+        data: valoresProjecaodelucro,
         label: "Projeção de lucro"
     }]
 }
