@@ -8,26 +8,26 @@ function valor(arquivo){
   return dados_valores
 }
 
-let meses_despesasmensais = valor_meses(variavel1)
+let mesesDespesasmensais = valor_meses(variavel1)
 
-let valores_despesasmensais = valor(variavel1)
+let valoresDespesasmensais = valor(variavel1)
 
-console.log(meses_despesasmensais)
+console.log(mesesDespesasmensais)
 
-console.log(valores_despesasmensais)
+console.log(valoresDespesasmensais)
 
 //Código do Gráfico
 
 const ctx = document.getElementById("myChart")
 
-const labels = meses_despesasmensais
+const labels = mesesDespesasmensais
 
 const data = {
     labels,
     datasets:[{
         backgroundColor: 'rgb(2, 46, 156)',
         borderColor: 'rgb(21, 60, 234)',
-        data: valores_despesasmensais,
+        data: valoresDespesasmensais,
         label: "Despesas Mensais"
     }]
     
