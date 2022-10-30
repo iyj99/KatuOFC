@@ -142,6 +142,7 @@ body{
     font-weight: bold;
     gap: .5rem;
     scroll-snap-align: center;
+    padding: 1rem;
 }
 
 .grafico_0 .grafico_receita{
@@ -266,16 +267,21 @@ body{
     cursor: pointer;
 }
 
+.opcoes_calendario form button:hover{
+    background-color: #083A88;
+    color: #fff;
+}
+
 .opcoes_calendario .botao_fechar{
     position: absolute;
-    top: 6rem;
-    right: 2rem;
+    top: 7rem;
+    left: 2rem;
     cursor: pointer;
 }
 
-.opcoes_calendario .botao_fechar img{
-    border: 2px solid white;
+.opcoes_calendario .botao_fechar img:hover{
     border-radius: 50%;
+    background-color: #083A88;
 }
 
 /*===== CAIXA PARA ENVIAR A TABELA DE DADOS =====*/
@@ -315,18 +321,24 @@ body{
 
 .caixa_upload form button{
     background-color: lightgray;
+    border: 0;
+}
+
+.caixa_upload form button:hover{
+    background-color: #083A88;
+    color: #fff;
 }
 
 .caixa_upload .botao_fechar{
     position: absolute;
-    top: 6rem;
-    right: 2rem;
+    top: 7rem;
+    left: 2rem;
     cursor: pointer;
 }
 
-.caixa_upload .botao_fechar img{
-    border: 2px solid white;
+.caixa_upload .botao_fechar img:hover{
     border-radius: 50%;
+    background-color: #083A88;
 }
 
 /*===== BARRA DE NAVEGAÇÃO MOBILE ===== */

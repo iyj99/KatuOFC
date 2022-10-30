@@ -25,26 +25,42 @@ const labels = mesesDespesasmensais
 const data = {
     labels,
     datasets:[{
-        backgroundColor: 'rgb(2, 46, 156)',
+        backgroundColor: 'rgb(103, 169, 243)',
         borderColor: 'rgb(21, 60, 234)',
         data: valoresDespesasmensais,
         label: "Despesas Mensais"
     }]
-    
 }
 
 const config = {
-    type: 'bar',
+    type: 'line',
     data: data,
     options: {
       responsive: true,
       plugins: {
-        legend: {
-          position: 'top',
-        },
         title: {
           display: true,
-          text: 'Chart.js Bar Chart'
+          text: 'Chart.js Line Chart - Cubic interpolation mode'
+        },
+      },
+      interaction: {
+        intersect: false,
+      },
+      scales: {
+        x: {
+          display: true,
+          title: {
+            display: true
+          }
+        },
+        y: {
+          display: true,
+          title: {
+            display: true,
+            text: 'Value'
+          },
+          suggestedMin: -10,
+          suggestedMax: 200
         }
       }
     },

@@ -17,7 +17,9 @@ def facilitamei_index(request):
 
 
 def facilitamei_dashboard(request):
-    return render(request, 'facilitamei_dashboard.html')
+    variavel1 = {"a": 100, "b": 200}
+    variavel2 = json.dumps(variavel1, indent=4, default=str, ensure_ascii=False)
+    return render(request, 'facilitamei_dashboard.html', {'variavel1': variavel1, 'variavel2': variavel2})
 
 
 def facilitamei_sobre(request):
