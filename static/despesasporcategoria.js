@@ -1,19 +1,34 @@
+function valor_meses(arquivo){
+  var labels_meses = Object.keys(arquivo)
+  return labels_meses
+}
+
+function valor(arquivo){
+  var dados_valores = Object.values(arquivo)
+  return dados_valores
+}
+
+let categoria = valor_meses(variavel1)
+
+let valoresCategorias = valor(variavel1)
+
+console.log(categoria)
+
+console.log(valoresCategorias)
+
+
+//Código do Gráfico
+
 const ctx = document.getElementById("myChart")
 
-const labels = [
-    'A',
-    'B',
-    'C',
-    'D',
-    'E',
-]
+const labels = categoria
 
 const data = {
     labels,
     datasets:[{
         backgroundColor: 'rgb(103, 169, 243)',
         borderColor: 'rgb(21, 60, 234)',
-        data: [500, 321, 301, 400, 532,],
+        data: valoresCategorias,
         label: "Despesas por Categoria"
     }]
     
