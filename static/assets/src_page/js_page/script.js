@@ -19,3 +19,28 @@ function voltar_para_inicio(){
     opcoes_calendario.classList.add('display_none');
     container_opcoes.classList.add('display_none');
 };
+
+//====================== ESCONDER DADOS NOS GRÁFICOS DE RECEITA, DESPESA E SALDO ============================
+
+let valor_receita = document.querySelector('.valor_receita');
+let valor_despesa = document.querySelector('.valor_despesa');
+let valor_saldo = document.querySelector('.valor_saldo');
+
+let lista_valores = [valor_receita, valor_despesa, valor_saldo];
+
+function esconder_dados(){
+    if(valor_receita.style.backgroundColor != 'black'){
+        for(i=0; i < lista_valores.length; i++){
+            lista_valores[i].style.backgroundColor = 'black';
+            lista_valores[i].style.height = '.8rem';
+        };
+    }
+    else{
+        for(i=0; i < lista_valores.length; i++){
+            lista_valores[i].style.backgroundColor = 'white';
+            lista_valores[i].style.height = 'initial';
+        };
+    };
+};
+
+//===========================================================================================================

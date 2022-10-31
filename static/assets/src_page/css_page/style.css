@@ -197,6 +197,24 @@ body{
     height: 100% !important;
 }
 
+/*==== VALORES DE RECEITA, DESPESA E SALDO ====*/
+
+.area_dos_graficos .grafico_0 .grafico_receita .valor_receita,
+.area_dos_graficos .grafico_0 .grafico_despesa .valor_despesa,
+.area_dos_graficos .grafico_0 .grafico_saldo .valor_saldo{
+    overflow: hidden;
+    border-radius: 10px;
+    transition: all .3s;
+    display: flex;
+    float: right;
+}
+
+.area_dos_graficos .grafico_0 .numeros_grafico_0 span:last-child{
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+
 /*===== CALENDÁRIO =====*/
 
 .grafico_0 .calendario{
@@ -306,6 +324,12 @@ body{
     bottom: 1rem;
     border-radius: 10px;
     display: flex;
+
+    position: absolute;
+    top: -95vh;
+    animation-name: caixa_de_upload;
+    animation-duration: .45s;
+    animation-fill-mode: forwards;
 }
 
 .caixa_upload form{
@@ -350,6 +374,11 @@ body{
 .caixa_upload .botao_fechar img:hover{
     border-radius: 50%;
     background-color: #083A88;
+}
+
+@keyframes caixa_de_upload{
+    0%{top: -95vh;}
+    100%{top: 0vh;}
 }
 
 /*===== BARRA DE NAVEGAÇÃO MOBILE ===== */
@@ -484,6 +513,7 @@ body{
     .caixa_upload .botao_fechar{
         top: 1rem;
         right: 1rem;
+        max-width: 2.2rem;
     }
 
     .opcoes_calendario .botao_fechar img,
@@ -493,6 +523,16 @@ body{
 
     .barra_navegacao_mobile{
         display: none;
+    }
+
+    @keyframes caixa_opcoes_calendario{
+        0%{top: -95vh;}
+        100%{top: 20vh;}
+    }
+
+    @keyframes caixa_de_upload{
+        0%{top: -95vh;}
+        100%{top: 25vh;}
     }
 }
 
