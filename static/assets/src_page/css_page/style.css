@@ -242,6 +242,12 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+
+    position: absolute;
+    top: -95vh;
+    animation-name: caixa_opcoes_calendario;
+    animation-duration: .45s;
+    animation-fill-mode: forwards;
 }
 
 .opcoes_calendario form{
@@ -282,6 +288,11 @@ body{
 .opcoes_calendario .botao_fechar img:hover{
     border-radius: 50%;
     background-color: #083A88;
+}
+
+@keyframes caixa_opcoes_calendario{
+    0%{top: -95vh;}
+    100%{top: 0vh;}
 }
 
 /*===== CAIXA PARA ENVIAR A TABELA DE DADOS =====*/
