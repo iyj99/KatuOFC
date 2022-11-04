@@ -19,24 +19,23 @@ console.log(valoresCategorias)
 
 //Código do Gráfico
 
-const ctx = document.getElementById("myChart")
+const ctx2 = document.getElementById("myChart2")
 
-const labels = categoria
+const labels2 = categoria
 
-const data = {
-    labels,
+const data2 = {
+    labels2,
     datasets:[{
         backgroundColor: 'rgb(103, 169, 243)',
         borderColor: 'rgb(21, 60, 234)',
         data: valoresCategorias,
         label: "Despesas por Categoria"
     }]
-    
 }
 
-const config = {
+const config2 = {
     type: 'bar',
-    data: data,
+    data: data2,
     options: {
       responsive: true,
       plugins: {
@@ -51,4 +50,4 @@ const config = {
     },
   };
 
-  const myChart = new Chart(ctx, config)
+  const myChart2 = new Chart(ctx2, config2)

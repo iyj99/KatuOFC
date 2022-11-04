@@ -18,12 +18,12 @@ console.log(valoresDespesasmensais)
 
 //Código do Gráfico
 
-const ctx = document.getElementById("myChart")
+const ctx1 = document.getElementById("myChart1")
 
-const labels = mesesDespesasmensais
+const labels1 = mesesDespesasmensais
 
-const data = {
-    labels,
+const data1 = {
+    labels1,
     datasets:[{
         backgroundColor: 'rgb(103, 169, 243)',
         borderColor: 'rgb(21, 60, 234)',
@@ -32,9 +32,9 @@ const data = {
     }]
 }
 
-const config = {
+const config1 = {
     type: 'line',
-    data: data,
+    data: data1,
     options: {
       responsive: true,
       plugins: {
@@ -66,4 +66,4 @@ const config = {
     },
   };
 
-  const myChart = new Chart(ctx, config)
+  const myChart1 = new Chart(ctx1, config1)

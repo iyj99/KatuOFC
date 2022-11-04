@@ -19,12 +19,12 @@ console.log(valoresProjecaodelucro)
 
 // Código do Gráfico
 
-const ctx = document.getElementById("myChart")
+const ctx4 = document.getElementById("myChart4")
 
-const labels = mesesProjecaodelucro
+const labels4 = mesesProjecaodelucro
 
-const data = {
-    labels,
+const data4 = {
+    labels4,
     datasets:[{
         backgroundColor: 'rgb(103, 169, 243)',
         borderColor: 'rgb(21, 60, 234)',
@@ -33,9 +33,9 @@ const data = {
     }]
 }
 
-const config = {
+const config4 = {
     type: 'line',
-    data: data,
+    data: data4,
     options: {
       responsive: true,
       plugins: {
@@ -67,4 +67,4 @@ const config = {
     },
   };
 
-  const myChart = new Chart(ctx, config)
+  const myChart4 = new Chart(ctx4, config4)

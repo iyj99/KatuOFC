@@ -8,13 +8,13 @@ console.log(valoresLucroXDespesas)
 
 //Código do Gráfico
 
-const ctx = document.getElementById("myChart")
+const ctx3 = document.getElementById("myChart3")
 
-const labels = [
+const labels3 = [
   
 ]
 
-const data = {
+const data3 = {
     labels: [
         'Lucro',
         'Despesas',
@@ -31,27 +31,20 @@ const data = {
     }]
 }
 
-const config = {
+const config3 = {
     type: 'doughnut',
-    data: data,
+    data: data3,
     options: {
         responsive: true
     }
   };
 
-  const myChart = new Chart(ctx, config)
-  
-  
-  
-  
-  
-  
+  const myChart3 = new Chart(ctx3, config3)
+
 /*
 const ctx = document.getElementById("myChart")
 
-const labels = [
-  
-]
+const labels = []
 
 const data = {
     labels: [

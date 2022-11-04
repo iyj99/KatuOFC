@@ -310,7 +310,7 @@ figure figcaption {
   left: 0;
   right: 0;
   content: '';
-  background: rgb(0 15 94 / 58%);
+  background: rgb(0 15 94 / 78%);
 }
 #fh5co-hero .flexslider .slides li {
   background-repeat: no-repeat;
@@ -372,7 +372,7 @@ figure figcaption {
   margin-bottom: 20px;
   font-size: 45px;
   line-height: 1.3;
-  font-weight: 100;
+  font-weight: 500;
   font-family: "Roboto", Arial, sans-serif;
 }
 @media screen and (max-width: 768px) {
