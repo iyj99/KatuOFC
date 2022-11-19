@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Katu DV</title>
     <link rel="stylesheet" href="../static/assets/src_katu_dv_page/css/site_oficial_katu_dv.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,7 +22,7 @@
                 <a href="#">INICIO</a>
             </li>
             <li>
-                <a href="#">NOSSOS PRODUTOS</a>
+                <a href="https://www.katudv.com/facilitamei">NOSSOS PRODUTOS</a>
             </li>
             <li>
                 <a href="#">SOBRE NÓS</a>
@@ -34,22 +34,22 @@
             </p>
             <ul class="redes_sociais_katu">
                 <li>
-                    <a href="#">
+                    <a href="https://www.facebook.com/KatuDataVisualization">
                         <img src="../static/assets/src_katu_dv_page/images/facebook-icon.png" alt="Link para o Facebook da Katu D.V">
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="http://www.twitter.com/katudv">
                         <img src="../static/assets/src_katu_dv_page/images/twitter-icon.png" alt="Link para o Twitter da Katu D.V">
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="https://www.instagram.com/katudatavisualization/">
                         <img src="../static/assets/src_katu_dv_page/images/instagram-icon.png" alt="Link para o Instagram da Katu D.V">
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="https://www.linkedin.com/in/katudatavisualization">
                         <img src="../static/assets/src_katu_dv_page/images/linkedin-icon.png" alt="Link para o Linkedin da Katu D.V">
                     </a>
                 </li>
@@ -57,7 +57,7 @@
         </section>
     </nav>
     <header>
-        <div>
+        <div class="slide1">
             <section>
                 <h2>Somos uma startup focada em visualização de dados</h2>
                 <p>
@@ -68,7 +68,23 @@
                 </a>
             </section>
         </div>
+        <div class="slide2">
+            <section>
+                <h2>Conheça o FacilitaMEI</h2>
+                <p>
+                    Tenha controle de seus dados e planilhas com nossa
+                    ferramenta de visualização a um clique
+                </p>
+                <a href="https://www.katudv.com/facilitamei" class="saiba_mais">
+                    SAIBA MAIS
+                </a>
+            </section>
+        </div>
     </header>
+    <div class="slides_button">
+        <div class="slides_bttn1" onclick="slide_1_active()"></div>
+        <div class="slides_bttn2" onclick="slide_2_active()"></div>
+    </div>
     <script src="../static/assets/src_katu_dv_page/js/site_oficial_katu_dv.js"></script>
 </body>
 </html>
