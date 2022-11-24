@@ -23,6 +23,8 @@ function slide_1_active(){
 
     header.style.backgroundImage = img_logo_katudv;
     header.style.backgroundSize = '40rem';
+
+    reset_slide_interval();
 };
 
 function slide_2_active(){
@@ -33,32 +35,35 @@ function slide_2_active(){
 
     header.style.backgroundImage = img_logo_facilitamei;
     header.style.backgroundSize = '25rem';
+
+    reset_slide_interval();
 };
 
+let time_interval = 7000;
+let slide_interval = setInterval(slide_change, time_interval);
 
-let time_interval = 6000;
+function slide_change(){
+    if(slide1.style.opacity == '1'){
+        slide1.style.opacity = '0';
+        slide1.style.zIndex = 1;
+        slide2.style.opacity = '1';
+        slide2.style.zIndex = 2;
 
-function slider_animation(){
-    setInterval(() => {
-        if(slide1.style.opacity == '1'){
-            slide1.style.opacity = '0';
-            slide1.style.zIndex = 1;
-            slide2.style.opacity = '1';
-            slide2.style.zIndex = 2;
+        header.style.backgroundImage = img_logo_facilitamei;
+        header.style.backgroundSize = '25rem';
+    }
+    else{
+        slide1.style.opacity = '1';
+        slide1.style.zIndex = 2;
+        slide2.style.opacity = '0';
+        slide2.style.zIndex = 1;
 
-            header.style.backgroundImage = img_logo_facilitamei;
-            header.style.backgroundSize = '25rem';
-        }
-        else{
-            slide1.style.opacity = '1';
-            slide1.style.zIndex = 2;
-            slide2.style.opacity = '0';
-            slide2.style.zIndex = 1;
+        header.style.backgroundImage = img_logo_katudv;
+        header.style.backgroundSize = '40rem';
+    };
+};
 
-            header.style.backgroundImage = img_logo_katudv;
-            header.style.backgroundSize = '40rem';
-        };
-    }, time_interval);
-}
-
-slider_animation();
+function reset_slide_interval(){
+    clearInterval(slide_interval);
+    slide_interval = setInterval(slide_change, time_interval);
+};
