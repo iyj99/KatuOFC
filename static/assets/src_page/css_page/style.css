@@ -254,7 +254,6 @@ body{
     align-items: center;
     justify-content: center;
 
-    position: absolute;
     top: -95vh;
     animation-name: caixa_opcoes_calendario;
     animation-duration: .45s;
@@ -318,7 +317,6 @@ body{
     border-radius: 10px;
     display: flex;
 
-    position: absolute;
     top: -95vh;
     animation-name: caixa_de_upload;
     animation-duration: .45s;
