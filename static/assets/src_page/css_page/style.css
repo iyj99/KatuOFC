@@ -11,7 +11,8 @@
 
 :root{
     --cor_principal: #000096;
-    --border_radius_principal: .4rem;
+    --border_radius_principal: 1rem;
+    --box_shadow_principal: 6px 8px 8px #8885;
 }
 
 body{
@@ -157,7 +158,7 @@ body{
     gap: .5rem;
     scroll-snap-align: center;
     padding: 1rem;
-    box-shadow: 6px 8px 8px 1px #888;
+    box-shadow: var(--box_shadow_principal);
 }
 
 .grafico_0 .grafico_receita{
@@ -202,7 +203,7 @@ body{
     height: auto;
     padding: 20px;
     background-color: white;
-    box-shadow: 6px 8px 8px 1px #888;
+    box-shadow: var(--box_shadow_principal);
 }
 
 .area_dos_graficos .grafico_1 #myChart1,
@@ -480,7 +481,7 @@ body{
     .grafico_0 .grafico_despesa,
     .grafico_0 .grafico_saldo{
         scroll-snap-align: unset;
-        box-shadow: 6px 8px 8px 1px #888;
+        box-shadow: var(--box_shadow_principal);
     }
 
     .grafico_0 .grafico_receita .numeros_grafico_0,
@@ -499,12 +500,12 @@ body{
 
     .grafico_0 .calendario{
         position: static;
-        border-radius: 10px;
+        border-radius: var(--border_radius_principal);
         height: 65%;
         width: 8%;
         transition-property: border-bottom;
         transition-duration: .1s;
-        box-shadow: 6px 8px 8px 1px #888;
+        box-shadow: var(--box_shadow_principal);
     }
 
     .grafico_0 .calendario:hover{
