@@ -250,10 +250,6 @@ body .slides_button div:hover{
         position: static;
     }
 
-    body header div{
-        width: 80%;
-    }
-
     body header div section{
         max-width: 40rem;
     }
