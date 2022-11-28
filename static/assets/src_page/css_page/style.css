@@ -159,6 +159,7 @@ body{
     scroll-snap-align: center;
     padding: 1rem;
     box-shadow: var(--box_shadow_principal);
+    height: 80%;
 }
 
 .grafico_0 .grafico_receita{
@@ -200,7 +201,7 @@ body{
 .area_dos_graficos .grafico_3,
 .area_dos_graficos .grafico_4{
     width: 100%;
-    height: auto;
+    height: 100vw;
     padding: 20px;
     background-color: white;
     box-shadow: var(--box_shadow_principal);
@@ -434,6 +435,13 @@ body{
         min-width: 45%;
         font-size: 5vw;
     }
+
+    .area_dos_graficos .grafico_1,
+    .area_dos_graficos .grafico_2,
+    .area_dos_graficos .grafico_3,
+    .area_dos_graficos .grafico_4{
+        height: 30rem;
+    }
 }
 
 /*=== DESKTOP ===*/
@@ -468,12 +476,14 @@ body{
         scroll-snap-type: none;
         overflow-x: unset;
         scroll-behavior: unset;
-        gap: 0%;
+        gap: 1.5rem;
         padding-bottom: 0;
+        justify-content: center;
+        
     }
     
     .grafico_0 div{
-        width: 28%;
+        width: 27%;
         min-width: 0%;
     }
     
@@ -482,6 +492,9 @@ body{
     .grafico_0 .grafico_saldo{
         scroll-snap-align: unset;
         box-shadow: var(--box_shadow_principal);
+        gap: 2rem;
+        height: 80%;
+        padding: 2rem 1rem;
     }
 
     .grafico_0 .grafico_receita .numeros_grafico_0,
@@ -514,6 +527,13 @@ body{
 
     .area_dos_graficos .graficos_principais{
         flex-direction: row;
+    }
+
+    .area_dos_graficos .grafico_1,
+    .area_dos_graficos .grafico_2,
+    .area_dos_graficos .grafico_3,
+    .area_dos_graficos .grafico_4{
+        height: 30vw;
     }
 
     .container_opcoes{
