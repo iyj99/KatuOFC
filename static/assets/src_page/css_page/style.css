@@ -11,7 +11,8 @@
 
 :root{
     --cor_principal: #000096;
-    --border_radius_principal: .4rem;
+    --border_radius_principal: 1rem;
+    --box_shadow_principal: 6px 8px 8px #8885;
 }
 
 body{
@@ -157,7 +158,8 @@ body{
     gap: .5rem;
     scroll-snap-align: center;
     padding: 1rem;
-    box-shadow: 6px 8px 8px 1px #888;
+    box-shadow: var(--box_shadow_principal);
+    height: 80%;
 }
 
 .grafico_0 .grafico_receita{
@@ -199,10 +201,10 @@ body{
 .area_dos_graficos .grafico_3,
 .area_dos_graficos .grafico_4{
     width: 100%;
-    height: auto;
+    height: 100vw;
     padding: 20px;
     background-color: white;
-    box-shadow: 6px 8px 8px 1px #888;
+    box-shadow: var(--box_shadow_principal);
 }
 
 .area_dos_graficos .grafico_1 #myChart1,
@@ -433,6 +435,13 @@ body{
         min-width: 45%;
         font-size: 5vw;
     }
+
+    .area_dos_graficos .grafico_1,
+    .area_dos_graficos .grafico_2,
+    .area_dos_graficos .grafico_3,
+    .area_dos_graficos .grafico_4{
+        height: 30rem;
+    }
 }
 
 /*=== DESKTOP ===*/
@@ -467,12 +476,14 @@ body{
         scroll-snap-type: none;
         overflow-x: unset;
         scroll-behavior: unset;
-        gap: 0%;
+        gap: 1.5rem;
         padding-bottom: 0;
+        justify-content: center;
+        
     }
     
     .grafico_0 div{
-        width: 28%;
+        width: 27%;
         min-width: 0%;
     }
     
@@ -480,7 +491,10 @@ body{
     .grafico_0 .grafico_despesa,
     .grafico_0 .grafico_saldo{
         scroll-snap-align: unset;
-        box-shadow: 6px 8px 8px 1px #888;
+        box-shadow: var(--box_shadow_principal);
+        gap: 2rem;
+        height: 80%;
+        padding: 2rem 1rem;
     }
 
     .grafico_0 .grafico_receita .numeros_grafico_0,
@@ -499,12 +513,12 @@ body{
 
     .grafico_0 .calendario{
         position: static;
-        border-radius: 10px;
+        border-radius: var(--border_radius_principal);
         height: 65%;
         width: 8%;
         transition-property: border-bottom;
         transition-duration: .1s;
-        box-shadow: 6px 8px 8px 1px #888;
+        box-shadow: var(--box_shadow_principal);
     }
 
     .grafico_0 .calendario:hover{
@@ -513,6 +527,13 @@ body{
 
     .area_dos_graficos .graficos_principais{
         flex-direction: row;
+    }
+
+    .area_dos_graficos .grafico_1,
+    .area_dos_graficos .grafico_2,
+    .area_dos_graficos .grafico_3,
+    .area_dos_graficos .grafico_4{
+        height: 30vw;
     }
 
     .container_opcoes{
