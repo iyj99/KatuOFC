@@ -236,8 +236,8 @@ body{
 /*===== CALENDÁRIO =====*/
 
 .grafico_0 .calendario{
-    width: 6rem;
-    height: 6rem;
+    width: 5rem;
+    height: 5rem;
     /*background-image: linear-gradient(#01015c, #0505f7);*/
     background-color: var(--cor_principal);
     display: flex;

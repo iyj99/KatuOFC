@@ -63,7 +63,8 @@ const config4 = {
           suggestedMin: -10,
           suggestedMax: 200
         }
-      }
+      },
+      maintainAspectRatio: false
     },
   };
 
