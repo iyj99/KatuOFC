@@ -46,7 +46,8 @@ const config2 = {
           display: true,
           text: 'Chart.js Bar Chart'
         }
-      }
+      },
+      maintainAspectRatio: false
     },
   };
 
