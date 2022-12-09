@@ -1,28 +1,27 @@
 function valor_meses(arquivo){
-  var labels_meses = Object.keys(arquivo)
-  return labels_meses
-}
+  var labels_meses = Object.keys(arquivo);
+  return labels_meses;
+};
 
 function valor(arquivo){
-  var dados_valores = Object.values(arquivo)
-  return dados_valores
-}
+  var dados_valores = Object.values(arquivo);
+  return dados_valores;
+};
 
-let mesesDespesasmensais = valor_meses(variavel1)
+if(variavel1 != null){
+  let mesesDespesasmensais = valor_meses(variavel1);
+  let valoresDespesasmensais = valor(variavel1);
 
-let valoresDespesasmensais = valor(variavel1)
+  console.log(mesesDespesasmensais)
+  console.log(valoresDespesasmensais)
 
-console.log(mesesDespesasmensais)
+  //Código do Gráfico
 
-console.log(valoresDespesasmensais)
+  const ctx1 = document.getElementById("myChart1")
 
-//Código do Gráfico
+  const labels1 = mesesDespesasmensais
 
-const ctx1 = document.getElementById("myChart1")
-
-const labels1 = mesesDespesasmensais
-
-const data1 = {
+  const data1 = {
     labels1,
     datasets:[{
         backgroundColor: 'rgb(103, 169, 243)',
@@ -30,9 +29,9 @@ const data1 = {
         data: valoresDespesasmensais,
         label: "Despesas Mensais"
     }]
-}
+  }
 
-const config1 = {
+  const config1 = {
     type: 'line',
     data: data1,
     options: {
@@ -67,4 +66,5 @@ const config1 = {
     },
   };
 
-  const myChart1 = new Chart(ctx1, config1)
+  const myChart1 = new Chart(ctx1, config1);
+};

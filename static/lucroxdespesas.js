@@ -1,37 +1,39 @@
 function valor(arquivo){
-  var dados_valores = Object.values(arquivo)
-  return dados_valores
-}
+  var dados_valores = Object.values(arquivo);
+  return dados_valores;
+};
 
-let valoresLucroXDespesas = valor(variavel1)
-console.log(valoresLucroXDespesas)
+if(variavel1 != null){
+  let valoresLucroXDespesas = valor(variavel1);
 
-//Código do Gráfico
-
-const ctx3 = document.getElementById("myChart3")
-
-const labels3 = [
+  console.log(valoresLucroXDespesas);
   
-]
-
-const data3 = {
-    labels: [
-        'Lucro',
-        'Despesas',
-      ],
-    datasets:[{
-       //  borderColor: 'rgb(255, 99, 132)',
-        data: valoresLucroXDespesas,
-        backgroundColor: [
-            'rgb(28, 113, 209',
-            'rgb(241, 32, 32)',
-          ],
-          hoverOffset: 4,
-        label: "Progressão de vendas"
-    }]
-}
-
-const config3 = {
+  //Código do Gráfico
+  
+  const ctx3 = document.getElementById("myChart3");
+  
+  const labels3 = [
+    
+  ]
+  
+  const data3 = {
+      labels: [
+          'Lucro',
+          'Despesas',
+        ],
+      datasets:[{
+         //  borderColor: 'rgb(255, 99, 132)',
+          data: valoresLucroXDespesas,
+          backgroundColor: [
+              'rgb(28, 113, 209',
+              'rgb(241, 32, 32)',
+            ],
+            hoverOffset: 4,
+          label: "Progressão de vendas"
+      }]
+  }
+  
+  const config3 = {
     type: 'doughnut',
     data: data3,
     options: {
@@ -39,8 +41,9 @@ const config3 = {
         maintainAspectRatio: false
     }
   };
-
-  const myChart3 = new Chart(ctx3, config3)
+  
+  const myChart3 = new Chart(ctx3, config3);
+};
 
 /*
 const ctx = document.getElementById("myChart")
